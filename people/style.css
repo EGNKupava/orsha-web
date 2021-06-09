@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Prosto+One&display=swap');
+
+body {
+  --main-text-color: #ffffff;
+  --main-bg-color: #ffffff;
+  --dark-text-color: #00473E;
+  --dark-text-color-2: #475D5B;
+  --green-bg-color: #00473E;
+  --box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+  --border-radius: 16px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background: #F2F7F5;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 8px 8px 80px;
+}
+
+.header {
+  display: flex;
+  padding: 248px 156px 148px;
+  column-gap: 42px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  background: center / cover no-repeat url('../images/city-road.jpg');
+  margin-bottom: 80px;
+}
+
+
+.header-container .breadcrumps {
+  margin-bottom: 16px;
+}
+
+.breadcrumps .link, .breadcrumps .current {
+  position: relative;
+  color: var(--main-text-color);
+  font-size: 22px;
+  line-height: 24px;
+  transition: all 1s;
+}
+
+.breadcrumps .link:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.breadcrumps .link:hover:after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.header-container .title {
+  font-size: 56px;
+  line-height: 100%;
+  font-family: 'Prosto One', cursive;
+  color: #F2F7F5;
+  letter-spacing: 0.1em;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  row-gap: 80px;
+}
+
+.main .card {
+  padding: 48px;
+  border-bottom: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.main .card.big {
+  max-width: 730px;
+  align-self: center;
+}
+
+.main .card.dark {
+  background: var(--green-bg-color);
+  color: var(--main-text-color);
+}
+
+
+.card .card-title {
+  font-family: 'Prosto One', cursive;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+
+.card.light .card-title {
+  color: var(--dark-text-color);
+}
+
+.main .person-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .person-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.person-content .card.light {
+  background: var(--main-bg-color);
+  color: var(--dark-text-color-2);
+}
+
+.person-content .card {
+  max-width: 636px;
+  transform: translateX(-56px);
+}
+
+.person-content.reverse .card {
+  transform: translateX(56px);
+}
+.main .card-text {
+  font-size: 18px;
+  line-height: 130%;
+} 
