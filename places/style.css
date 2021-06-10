@@ -9,8 +9,7 @@ body {
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 8px 8px 80px;
-  background: #F2F7F5;
+  background: #ffffff;
 }
 
 .image {
@@ -22,8 +21,8 @@ body {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 16px;
-  background: center / cover no-repeat url('images/smile-people.jpg');
-  margin-bottom: 80px;
+  background: center / cover no-repeat url('images/road.jpg');
+  margin-bottom: 8px;
 }
 
 
@@ -65,62 +64,81 @@ body {
   letter-spacing: 0.1em;
 }
 
+
+.map-container .map {
+  position:relative;
+  overflow:hidden;
+  border-radius: 16px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+.map-container .points {
+  display: flex;
+  column-gap: 42px;
+  margin: 24px 188px;
+}
+
+.map-container .points .point-link {
+  position: relative;
+  font-size: 18px;
+  line-height: 130%;
+  text-decoration-line: underline;
+  color: #0D0525;
+}
+
+.map-container .points .point-link::before {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 14px;
+  left: -20px;
+  top: 6px;
+  background: no-repeat url('images/map-marker.png');
+}
+
 .main {
+  padding: 80px 0;
   display: flex;
   flex-flow: column;
   row-gap: 80px;
+  background: #F2F7F5;
 }
 
-.main .card {
-  padding: 48px;
-  border-bottom: 16px;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
-  border-radius: 16px;
-}
-
-.main .card.dark {
-  max-width: 730px;
-  align-self: center;
-  background: #00473E;
-  color: #ffffff;
-}
-
-.person-content .card.light {
-  background: #ffffff;
-  color: #475D5B;
-}
-
-.card .card-title {
-  font-family: 'Prosto One', cursive;
-  font-size: 40px;
-  line-height: 100%;
-  margin-bottom: 24px;
-}
-
-.card.light .card-title {
-  color: #00473E;
-}
-
-.main .person-content {
+.main .palces-content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.main .person-content.reverse {
+.main .palces-content.reverse {
   flex-direction: row-reverse;
 }
 
-
-.person-content .card {
+.palces-content .card {
   max-width: 636px;
+  padding: 48px;
+  border-bottom: 16px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  background: #ffffff;
+  background: #FAAE2B;
+  color: rgba(71, 93, 91, 1);
   transform: translateX(-56px);
 }
 
-.person-content.reverse .card {
+.palces-content.reverse .card {
   transform: translateX(56px);
 }
-.main .card-text {
+
+.palces-content .card-title {
+  font-family: 'Prosto One', cursive;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 24px;
+  color: #00473E;
+}
+
+.palces-content .card-text {
   font-size: 18px;
   line-height: 130%;
 } 
