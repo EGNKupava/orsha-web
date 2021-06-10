@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Prosto+One&display=swap');
 
 body {
-  --main-text-color: #ffffff;
-  --main-bg-color: #ffffff;
-  --dark-text-color: #00473E;
-  --dark-text-color-2: #475D5B;
-  --green-bg-color: #00473E;
-  --box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
-  --border-radius: 16px;
   font-family: 'PT Sans Narrow', sans-serif;
   background: #F2F7F5;
 }
@@ -17,33 +10,32 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 8px 8px 80px;
+  background: #ffffff;
 }
 
 .header {
-  display: flex;
   padding: 248px 156px 148px;
-  column-gap: 42px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: var(--border-radius);
+  border-radius: 16px;
   background: center / cover no-repeat url('../images/city-road.jpg');
   margin-bottom: 80px;
 }
 
 
-.header-container .breadcrumps {
+.header .breadcrumps {
   margin-bottom: 16px;
 }
 
-.breadcrumps .link, .breadcrumps .current {
+.header .link, .header .current {
   position: relative;
-  color: var(--main-text-color);
+  color: #ffffff;
   font-size: 22px;
   line-height: 24px;
   transition: all 1s;
 }
 
-.breadcrumps .link:after {
+.header .link:after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -56,12 +48,12 @@ body {
   transition: all 0.5s;
 }
 
-.breadcrumps .link:hover:after {
+.header .link:hover:after {
   opacity: 1;
   transform: translateX(0);
 }
 
-.header-container .title {
+.header .title {
   font-size: 56px;
   line-height: 100%;
   font-family: 'Prosto One', cursive;
@@ -77,21 +69,22 @@ body {
 
 .main .card {
   padding: 48px;
-  border-bottom: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
-}
-
-.main .card.big {
-  max-width: 730px;
-  align-self: center;
+  border-bottom: 16px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
 }
 
 .main .card.dark {
-  background: var(--green-bg-color);
-  color: var(--main-text-color);
+  max-width: 730px;
+  align-self: center;
+  background: #00473E;
+  color: #ffffff;
 }
 
+.person-content .card.light {
+  background: #ffffff;
+  color: #475D5B;
+}
 
 .card .card-title {
   font-family: 'Prosto One', cursive;
@@ -101,7 +94,7 @@ body {
 }
 
 .card.light .card-title {
-  color: var(--dark-text-color);
+  color: #00473E;
 }
 
 .main .person-content {
@@ -114,10 +107,6 @@ body {
   flex-direction: row-reverse;
 }
 
-.person-content .card.light {
-  background: var(--main-bg-color);
-  color: var(--dark-text-color-2);
-}
 
 .person-content .card {
   max-width: 636px;
