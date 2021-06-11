@@ -59,8 +59,17 @@ body {
   color: #ffffff;
 }
 
-.main .logo {
-  margin: 0 auto;
+.main .creator {
+  text-align: center;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.creator a {
+  text-decoration: underline;
+  color: #FFFFFF;
+  font-size: 22px;
 }
 
 @media (max-width: 1280px) {

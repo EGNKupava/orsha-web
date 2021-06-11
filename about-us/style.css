@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Prosto+One&display=swap');
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  background: #ffffff;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.image {
+  border-radius: 16px;
+}
+
+.header {
+  padding: 248px 156px 148px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  background: center / cover no-repeat url('images/road.jpg');
+  margin-bottom: 8px;
+}
+
+
+.header .breadcrumps {
+  margin-bottom: 16px;
+}
+
+.header .link, .header .current {
+  position: relative;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+  transition: all 1s;
+}
+
+.header .link:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.header .link:hover:after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.header .title {
+  font-size: 56px;
+  line-height: 100%;
+  font-family: 'Prosto One', cursive;
+  color: #F2F7F5;
+  letter-spacing: 0.1em;
+}
+
+
+.main {
+  padding: 80px 0;
+  background: #F2F7F5;
+}
+.main .card {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 48px;
+  border-bottom: 16px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  align-self: center;
+  background: #00473E;
+  color: #ffffff;
+}
+
+.card .card-title {
+  font-family: 'Prosto One', cursive;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+
+.card .card-text {
+  font-size: 18px;
+  line-height: 130%;
+} 
+
+.main .contacts {
+  margin-top: 48px;
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+}
+
+.contacts .link {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.contacts .link:hover {
+  opacity: 0.8;
+}
+
+.link.facebook {
+  background: center no-repeat #ffffff url(images/icon-facebook.svg);
+}
+.link.instagram {
+  background: center no-repeat #ffffff url(images/icon-instagram.svg);
+}
+.link.vk {
+  background: center no-repeat #ffffff url(images/icon-vk.svg);
+}
