@@ -6,6 +6,7 @@ body {
 }
 
 .wrapper {
+  padding: 8px;
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
@@ -25,6 +26,48 @@ body {
   margin-bottom: 8px;
 }
 
+.burger-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../images/icon-menu.svg);
+  z-index: 10;
+}
+
+.burger {
+  display: none;
+  padding: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  flex-flow: column;
+  row-gap: 16px;
+  align-items: flex-start;
+  background: #00473E;
+  border-radius: 16px;
+  max-width: 370px;
+}
+
+.burger.open {
+  display: flex;
+}
+
+.burger.open ~ .burger-button {
+  background-image: url(../images/icon-menu-close.svg);
+}
+
+.burger .creator, .creator a {
+  color: #ffffff;
+}
+
+.burger .creator a {
+  text-decoration: underline;
+}
 
 .header .breadcrumps {
   margin-bottom: 16px;

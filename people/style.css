@@ -26,6 +26,48 @@ body {
   margin-bottom: 80px;
 }
 
+.burger-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../images/icon-menu.svg);
+  z-index: 10;
+}
+
+.burger {
+  display: none;
+  padding: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  flex-flow: column;
+  row-gap: 16px;
+  align-items: flex-start;
+  background: #00473E;
+  border-radius: 16px;
+  max-width: 370px;
+}
+
+.burger.open {
+  display: flex;
+}
+
+.burger.open ~ .burger-button {
+  background-image: url(../images/icon-menu-close.svg);
+}
+
+.burger .creator, .creator a {
+  color: #ffffff;
+}
+
+.burger .creator a {
+  text-decoration: underline;
+}
 
 .header .breadcrumps {
   margin-bottom: 16px;
@@ -93,6 +135,13 @@ body {
 .card .card-title {
   font-family: 'Prosto One', cursive;
   font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+
+.card .card-subtitle {
+  font-family: Prosto One;
+  font-size: 22px;
   line-height: 100%;
   margin-bottom: 24px;
 }

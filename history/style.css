@@ -7,9 +7,9 @@ body {
 
 .wrapper {
   position: relative;
-  padding: 8px ;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 8px;
   background: #ffffff;
 }
 
@@ -23,8 +23,8 @@ body {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 16px;
-  background: center / cover no-repeat url('images/road.jpg');
-  margin-bottom: 8px;
+  background: center / cover no-repeat url('images/sand-castle.jpg');
+  margin-bottom: 80px;
 }
 
 .burger-button {
@@ -109,21 +109,25 @@ body {
 }
 
 .main {
-  padding: 80px 42px 42px 42px;
-  background: #F2F7F5;
+  display: flex;
+  flex-flow: column;
+  row-gap: 80px;
 }
 
 .main .card {
-  max-width: 730px;
-  margin: 0 auto;
   padding: 48px;
   border-bottom: 16px;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.12);
   border-radius: 16px;
+  color: #475D5B;
+  max-width: 730px;
   align-self: center;
-  background: #00473E;
-  color: #ffffff;
 }
+
+.main .card.color {
+  background: #FFA8BA;
+}
+
 
 .card .card-title {
   font-family: 'Prosto One', cursive;
@@ -133,52 +137,33 @@ body {
 }
 
 .card .card-subtitle {
-  font-family: Prosto One;
+  font-family: 'Prosto One', cursive;
   font-size: 22px;
   line-height: 100%;
   margin-bottom: 24px;
 }
 
-.card .card-text {
-  font-size: 18px;
-  line-height: 130%;
-} 
+.main .story-block {
+  padding: 16px 0;
+  background: #F2F7F5;
+}
 
-.main .contacts {
-  margin: 48px 0;
+.story-block .story {
   display: flex;
-  column-gap: 16px;
+  flex-wrap: wrap;
   justify-content: center;
+  column-gap: 30px;
+  max-width: 1130px;
+  margin: 0 auto;
 }
 
-.contacts .link {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+.story .image {
+  display: block;
+  position: relative;
 }
 
-.contacts .link:hover {
-  opacity: 0.8;
+.story .card.light {
+  background: #ffffff;
+  transform: translateY(-68px);
 }
 
-.link.facebook {
-  background: center no-repeat #ffffff url(images/icon-facebook.svg);
-}
-.link.instagram {
-  background: center no-repeat #ffffff url(images/icon-instagram.svg);
-}
-.link.vk {
-  background: center no-repeat #ffffff url(images/icon-vk.svg);
-}
-
-.main .creator {
-  text-align: right;
-  font-size: 18px;
-  line-height: 130%;
-}
-
-.creator a {
-  text-decoration: underline;
-  font-size: 22px;
-  color: inherit;
-}

@@ -8,11 +8,24 @@
   <title>Орша</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="style.css">
+  <script defer src="../scripts/burger.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
+      <div class="burger" id="burger">
+        <a class="link" href="../people/people.html">Люди</a>
+        <a class="link" href="../history/history.html">История</a>
+        <a class="link" href="../about-us/about-us.html">О проекте</a>
+        <p class="creator">
+          <span>
+            Сделано при поддержке проекта
+          </span>
+          <a href="//cleverland.by/">Cleverland</a>
+        </p>
+      </div>
+      <button class="burger-button" type="button" id="burger-button"></button>
       <div class="breadcrumps">
         <a class="link" href="../index.html">Главная страница</a>
         <span class="current">&nbsp;/ Маршруты</span>

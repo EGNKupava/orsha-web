@@ -8,11 +8,24 @@
   <title>Орша</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="style.css">
+  <script defer src="../scripts/burger.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
+      <div class="burger" id="burger">
+        <a class="link" href="../people/people.html">Люди</a>
+        <a class="link" href="../history/history.html">История</a>
+        <a class="link" href="../places/places.html">Маршруты</a>
+        <p class="creator">
+          <span>
+            Сделано при поддержке проекта
+          </span>
+          <a href="//cleverland.by/">Cleverland</a>
+        </p>
+      </div>
+      <button class="burger-button" type="button" id="burger-button"></button>
       <div class="breadcrumps">
         <a class="link" href="../index.html">Главная страница</a>
         <span class="current">&nbsp;/ О проекте</span>
@@ -22,7 +35,7 @@
     <main class="main">
       <div class="card">
         <h2 class="card-title">Люди нашего города</h2>
-        <h3 class="card-subtitle">Люди нашего города</h3>
+        <h3 class="card-subtitle">Подзаголовок</h3>
         <p class="card-text">
           Разнообразный и богатый опыт начало повседневной работы по формированию позиции требуют
           определения и уточнения направлений прогрессивного развития. Таким образом дальнейшее развитие различных форм
@@ -41,6 +54,12 @@
         <a class="link instagram" href="#!" title="instagram" ></a>
         <a class="link vk" href="#!" title="vk" ></a>
       </div>
+      <p class="creator">
+        <span>
+          Сделано при поддержке проекта
+        </span>
+        <a href="//cleverland.by/">Cleverland</a>
+      </p>
     </main>
   </div>
 </body>
